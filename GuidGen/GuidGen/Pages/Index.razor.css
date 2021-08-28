@@ -37,23 +37,17 @@
 }
 
     .gen-button:hover {
+        border: none;
         background-color: #5010ab;
     }
 
     .gen-button:active {
+        border: none;
         background-color: #7123e2;
         transform: translateZ(1px);
         width: 198px;
         margin: 10px 11px;
     }
-
-.gen-button:hover {
-    border: none;
-}
-
-.gen-button:active {
-    border: none;
-}
 
 .copy-button {
     padding: 5px;
