@@ -47,6 +47,14 @@
         margin: 10px 11px;
     }
 
+.gen-button:hover {
+    border: none;
+}
+
+.gen-button:active {
+    border: none;
+}
+
 .copy-button {
     padding: 5px;
     font-size: 20px;
