@@ -28,6 +28,7 @@
     border-radius: 12px;
     background: linear-gradient( to right, #0d264b, #1c2149, #281c46, #331440, #3b0b38 );
     box-shadow: -4px 4px 13px -1px rgba(140, 132, 132, 0.57);
+    outline: none;
 
     /* text */
     color: white;
@@ -37,14 +38,11 @@
 }
 
     .gen-button:hover {
-        border: none;
         background-color: #5010ab;
     }
 
     .gen-button:active {
         background-color: #7123e2;
-        border: none;
-        border-radius: 12px;
         transform: translateZ(1px);
         width: 198px;
         margin: 10px 11px;
