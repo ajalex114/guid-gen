@@ -1,0 +1,89 @@
+﻿body {
+     font-family: Roboto; 
+}
+
+.guid-container {
+    justify-content: center;
+    align-items: center;
+    margin-top: 140px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gen-button {
+    /* button */
+    margin: 10px;
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient( to right, #0d264b, #1c2149, #281c46, #331440, #3b0b38 );
+    box-shadow: -4px 4px 13px -1px rgba(140, 132, 132, 0.57);
+
+    /* text */
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+    .gen-button:hover {
+        background-color: #5010ab;
+    }
+
+    .gen-button:active {
+        background-color: #7123e2;
+        transform: translateZ(1px);
+        width: 198px;
+        margin: 10px 11px;
+    }
+
+.copy-button {
+    padding: 5px;
+    font-size: 20px;
+    margin-left: 6px;
+    cursor: context-menu;
+    background-color: linear-gradient( to right, #0d264b, #1c2149, #281c46, #331440, #3b0b38 );
+}
+
+    .copy-button:hover {
+        cursor: pointer;
+    }
+
+    .copy-button:active {
+        font-size: 19px;
+        cursor: pointer;
+    }
+
+.guid-label {
+    margin: 1rem;
+    font-size: 18px;
+    transition: font-size 200ms;
+}
+
+.content-container:hover .guid-label {
+    font-size: 20px;
+    transition: font-size 200ms;
+}
+
+.arrow {
+    visibility: hidden;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.copy-div:active .arrow {
+    visibility: visible;
+    transform: rotate(360deg);
+    transition-property: transform;
+    transition-duration: 1s;
+}

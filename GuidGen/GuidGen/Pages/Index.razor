@@ -1,0 +1,45 @@
+﻿@page "/"
+@inject IJSRuntime jsRuntime
+
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+<div class="guid-container">
+    <div class="button-container">
+        <button class="generate-button main-button gen-button" @onclick="AddGuid">Generate GUID</button>
+        <button class="clear-button main-button gen-button" @onclick="ClearGuids">Clear</button>
+    </div>
+
+    <br />
+
+
+    @foreach (var guid in guids)
+    {
+        <div class="content-container">
+            <p class="guid-label">@guid</p>
+            <div class="copy-div">
+                <i class="fa fa-copy copy-button" @onclick="()=>CopyItem(guid)"></i>
+                <img class="arrow" src="./img/blue.png" />
+            </div>
+        </div>
+    }
+</div>
+
+@code {
+    List<string> guids = new List<string> { Guid.NewGuid().ToString() };
+
+    private void AddGuid()
+    {
+        guids.Add(Guid.NewGuid().ToString());
+    }
+
+    private void CopyItem(string item)
+    {
+        jsRuntime.InvokeAsync<String>("copyItem", item);
+    }
+
+    private void ClearGuids()
+    {
+        guids.Clear();
+    }
+}
