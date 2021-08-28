@@ -42,8 +42,9 @@
     }
 
     .gen-button:active {
-        border: none;
         background-color: #7123e2;
+        border: none;
+        border-radius: 12px;
         transform: translateZ(1px);
         width: 198px;
         margin: 10px 11px;
