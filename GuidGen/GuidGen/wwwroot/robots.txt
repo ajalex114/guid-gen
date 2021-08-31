@@ -1,2 +1,4 @@
 ﻿User-agent: *
 Disallow: /norobots/
+
+Sitemap: https://guid.ajalex.com/sitemap.xml
