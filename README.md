@@ -1,3 +1,5 @@
+[![Azure Static Web Apps CI/CD](https://github.com/ajalex114/guid-gen/actions/workflows/azure-static-web-apps-green-bush-00b4eb210.yml/badge.svg?branch=main)](https://github.com/ajalex114/guid-gen/actions/workflows/azure-static-web-apps-green-bush-00b4eb210.yml)
+
 # GuidGen
 
 [GuidGen](https://green-bush-00b4eb210.azurestaticapps.net/) is a web app used to generate GUIDs.
